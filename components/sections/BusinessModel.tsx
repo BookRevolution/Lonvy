@@ -27,7 +27,7 @@ export function BusinessModel() {
       <Container>
         <SectionHeader
           eyebrow="Geschäftsmodell"
-          title="Wirtschaftlich sinnvoll — risikoarm strukturiert."
+          title="Wirtschaftlich sinnvoll, risikoarm strukturiert."
           lead="Ihre Produktlinie generiert zusätzliche Einnahmen, ohne dass Sie Entwicklung, Lager oder Marketing selbst aufbauen müssen. Die Details des Modells besprechen wir individuell im Erstgespräch."
         />
 
