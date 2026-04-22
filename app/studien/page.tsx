@@ -9,11 +9,47 @@ import { cn } from "@/lib/cn";
 export const metadata: Metadata = {
   title: "Studien & Evidenz",
   description: `${totalStudies} peer-reviewed Studien — die wissenschaftliche Grundlage unserer Wirkstoff-Protokolle. Alle Referenzen mit direkten Links zu den Originalquellen.`,
+  alternates: { canonical: "/studien" },
+};
+
+const medicalWebPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Evidenzbasierte Studienreferenzen",
+  description:
+    "Peer-reviewed Studien zu den Wirkstoff-Protokollen von Lonvy. Zusammenstellung für medizinisches Fachpublikum.",
+  url: "https://lonvy.de/studien",
+  audience: {
+    "@type": "MedicalAudience",
+    audienceType: "medical professional",
+  },
+  about: [
+    { "@type": "Substance", name: "Kollagen" },
+    { "@type": "Substance", name: "Eisen" },
+    { "@type": "Substance", name: "L-Lysin" },
+    { "@type": "Substance", name: "Ashwagandha" },
+    { "@type": "Substance", name: "Magnesium" },
+    { "@type": "Substance", name: "Vitamin B6" },
+    { "@type": "Substance", name: "L-Tryptophan" },
+    { "@type": "Substance", name: "Vitamin B12" },
+    { "@type": "Substance", name: "Zink" },
+    { "@type": "Substance", name: "Vitamin D" },
+  ],
+  inLanguage: "de",
+  isPartOf: {
+    "@type": "WebSite",
+    name: "Lonvy",
+    url: "https://lonvy.de",
+  },
 };
 
 export default function StudienPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageJsonLd) }}
+      />
       <SiteShell>
         {/* Header */}
         <section className="bg-cream-100 pt-20 pb-16 md:pt-32 md:pb-24">

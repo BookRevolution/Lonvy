@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -43,6 +45,16 @@ export function Science() {
               <p className="text-[16px] leading-[1.7] text-warm-700">{p.body}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 md:mt-20 flex justify-center">
+          <Link
+            href="/studien"
+            className="inline-flex items-center gap-2 text-[15px] md:text-[16px] font-medium text-gold-800 hover:text-gold-700 underline underline-offset-4 decoration-gold-500/60 hover:decoration-gold-500"
+          >
+            20 Referenzstudien ansehen
+            <ArrowUpRight size={16} strokeWidth={2} aria-hidden />
+          </Link>
         </div>
       </Container>
     </Section>

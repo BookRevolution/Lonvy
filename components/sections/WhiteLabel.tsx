@@ -19,10 +19,10 @@ export function WhiteLabel() {
           <div className="lg:col-span-6">
             <div className="relative w-full aspect-[4/3] rounded-[24px] overflow-hidden">
               <Image
-                src="/images/white-label-example.png"
+                src="/images/white-label-example.webp"
                 alt="Beispiel einer White-Label-Produktlinie mit individuellem Praxis-Branding"
-                width={1600}
-                height={1200}
+                width={1200}
+                height={900}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -33,7 +33,7 @@ export function WhiteLabel() {
 
           {/* Text */}
           <div className="lg:col-span-6 lg:pl-8">
-            <span className="text-[13px] font-medium uppercase tracking-[0.12em] text-gold-700">
+            <span className="text-[13px] font-medium uppercase tracking-[0.12em] text-gold-800">
               White-Label-Konzept
             </span>
 
@@ -46,9 +46,10 @@ export function WhiteLabel() {
             </h2>
 
             <p className="mt-8 text-[17px] md:text-[18px] leading-[1.6] text-warm-700 max-w-[460px]">
-              Lonvy bleibt im Hintergrund. Auf der Verpackung, im Regal Ihrer
-              Praxis und in den Unterlagen für Ihre Patientinnen und Patienten
-              steht Ihr Name.
+              Private-Label-Nahrungsergänzung unter Ihrer Praxis-Marke. Lonvy
+              bleibt im Hintergrund — auf der Verpackung, im Regal Ihrer Praxis
+              und in den Unterlagen für Ihre Patientinnen und Patienten steht
+              Ihr Name.
             </p>
 
             <div className="mt-10 md:mt-12">

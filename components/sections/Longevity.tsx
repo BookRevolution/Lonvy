@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
@@ -75,6 +77,13 @@ export function Longevity() {
                   Fundierung mit gelebter Spitzenleistung. Diese Perspektive
                   prägt die Entwicklung unserer Produktlinien.
                 </p>
+                <Link
+                  href="/studien"
+                  className="inline-flex items-center gap-2 mt-2 text-[15px] font-medium text-gold-800 hover:text-gold-700 underline underline-offset-4 decoration-gold-500/60 hover:decoration-gold-500 w-fit"
+                >
+                  Studien zu den Wirkstoff-Protokollen
+                  <ArrowUpRight size={16} strokeWidth={2} aria-hidden />
+                </Link>
               </div>
             </div>
           </div>
@@ -94,11 +103,10 @@ function BookCoverDisplay() {
         }}
       >
         <Image
-          src="/images/die-alterslue-cover.jpg"
+          src="/images/die-alterslue-cover.webp"
           alt="Buchcover Die Alterslüge von Dr. med. univ. Lara Vadlau"
-          width={320}
-          height={480}
-          priority
+          width={700}
+          height={1050}
           className="rounded-[4px] shadow-[0_30px_60px_rgba(42,37,32,0.25)] w-[240px] md:w-[300px] lg:w-[320px] h-auto"
         />
       </div>

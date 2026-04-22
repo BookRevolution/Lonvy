@@ -54,7 +54,7 @@ export function CoreMessage() {
                 aria-hidden
               />
               <div>
-                <span className="text-[12px] font-medium uppercase tracking-[0.12em] text-gold-700">
+                <span className="text-[12px] font-medium uppercase tracking-[0.12em] text-gold-800">
                   {label}
                 </span>
                 <h3 className="mt-3 text-[22px] leading-[1.2] font-serif font-medium text-warm-900">

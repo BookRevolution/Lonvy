@@ -45,22 +45,26 @@ export function Navigation() {
               aria-label="Lonvy Startseite"
             >
               <Image
-                src="/images/lonvy-logo.png"
-                alt="Lonvy"
-                width={750}
-                height={950}
+                src="/images/lonvy-logo.webp"
+                alt="Lonvy — Startseite"
+                width={600}
+                height={760}
                 priority
                 className="h-12 md:h-14 w-auto"
+                translate="no"
               />
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-10">
+            <nav
+              className="hidden lg:flex items-center gap-8"
+              aria-label="Hauptnavigation"
+            >
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-[14px] font-medium text-warm-700 hover:text-warm-900 transition-colors"
+                  className="py-3 px-2 text-[14px] font-medium text-warm-700 hover:text-warm-900 transition-colors rounded-md"
                 >
                   {item.label}
                 </Link>
@@ -76,25 +80,34 @@ export function Navigation() {
 
             {/* Mobile Toggle */}
             <button
+              type="button"
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 -mr-2 text-warm-900"
+              className="lg:hidden p-3 -mr-2 text-warm-900 min-w-[44px] min-h-[44px] inline-flex items-center justify-center"
               aria-label={mobileOpen ? "Menü schließen" : "Menü öffnen"}
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-menu"
             >
-              {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileOpen ? <X size={24} aria-hidden /> : <Menu size={24} aria-hidden />}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {mobileOpen ? (
-          <div className="lg:hidden border-t border-cream-300/60 bg-cream-50">
-            <nav className="px-6 py-6 flex flex-col gap-1">
+          <div
+            id="mobile-menu"
+            className="lg:hidden border-t border-cream-300/60 bg-cream-50"
+          >
+            <nav
+              className="px-6 py-4 flex flex-col gap-1"
+              aria-label="Hauptnavigation (mobil)"
+            >
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="py-3 text-[16px] font-medium text-warm-900 border-b border-cream-200 last:border-b-0"
+                  className="py-4 text-[16px] font-medium text-warm-900 border-b border-cream-200 last:border-b-0"
                 >
                   {item.label}
                 </Link>
@@ -105,7 +118,10 @@ export function Navigation() {
       </header>
 
       {/* Mobile sticky CTA */}
-      <div className="lg:hidden fixed bottom-0 inset-x-0 z-40 p-4 bg-cream-50/95 backdrop-blur-md border-t border-cream-300/60">
+      <div
+        className="lg:hidden fixed bottom-0 inset-x-0 z-40 px-4 pt-4 bg-cream-50/95 backdrop-blur-md border-t border-cream-300/60"
+        style={{ paddingBottom: "max(16px, env(safe-area-inset-bottom))" }}
+      >
         <Button
           onClick={openBooking}
           variant="primary"

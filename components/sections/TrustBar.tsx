@@ -10,8 +10,9 @@ export function TrustBar() {
           <div className="md:col-span-3 flex justify-center md:justify-start">
             <Portrait
               size={220}
-              src="/images/lara-portrait.jpg"
+              src="/images/lara-portrait.webp"
               alt="Dr. med. univ. Lara Vadlau"
+              priority
               className="w-[180px] h-[180px] md:w-[220px] md:h-[220px]"
             />
           </div>
@@ -19,10 +20,10 @@ export function TrustBar() {
           {/* Text */}
           <div className="md:col-span-9 flex flex-col gap-6">
             <div>
-              <h3 className="text-[26px] md:text-[32px] leading-[1.15] text-warm-900 font-serif font-medium">
+              <h2 className="text-[26px] md:text-[32px] leading-[1.15] text-warm-900 font-serif font-medium">
                 Dr. med. univ. Lara Vadlau
-              </h3>
-              <p className="mt-3 text-[12px] md:text-[13px] font-medium uppercase tracking-[0.08em] text-gold-700">
+              </h2>
+              <p className="mt-3 text-[12px] md:text-[13px] font-medium uppercase tracking-[0.08em] text-gold-800">
                 Ärztin · Olympiasiegerin · Longevity-Autorin · Mitgründerin
               </p>
             </div>

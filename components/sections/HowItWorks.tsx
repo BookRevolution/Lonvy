@@ -56,7 +56,7 @@ export function HowItWorks() {
 
                   {/* Number badge */}
                   <div className="absolute left-0 top-0 w-[44px] h-[44px] md:w-[60px] md:h-[60px] rounded-full bg-cream-50 border-[1.5px] border-gold-500 flex items-center justify-center">
-                    <span className="font-serif text-[18px] md:text-[22px] text-gold-700 leading-none">
+                    <span className="font-serif text-[18px] md:text-[22px] text-gold-800 leading-none">
                       {step.n}
                     </span>
                   </div>

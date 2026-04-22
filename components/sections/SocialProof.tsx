@@ -6,7 +6,7 @@ export function SocialProof() {
     <Section id="social-proof" background="cream-50">
       <Container>
         <div className="max-w-[780px] mx-auto text-center">
-          <span className="text-[13px] font-medium uppercase tracking-[0.12em] text-gold-700">
+          <span className="text-[13px] font-medium uppercase tracking-[0.12em] text-gold-800">
             Aus der Praxis
           </span>
           <h2 className="mt-5 text-[32px] md:text-[40px] leading-[1.1] tracking-[-0.015em] text-warm-900 font-serif">

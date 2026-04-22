@@ -18,6 +18,8 @@
   --color-gold-500: #c9a769;
   --color-gold-600: #b08f52;
   --color-gold-700: #8f7340;
+  /* WCAG AA compliant on cream-50/100/200 (5.3:1+ for normal text) */
+  --color-gold-800: #6f5628;
 
   /* Signals (form context only) */
   --color-success: #6b8f5e;
@@ -39,6 +41,8 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  color-scheme: light;
+  -webkit-tap-highlight-color: rgba(201, 167, 105, 0.18);
 }
 
 body {
@@ -52,7 +56,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Headings use Fraunces with optical sizing */
+/* Headings use Fraunces with optical sizing + wrap-balance */
 h1,
 h2,
 h3,
@@ -64,6 +68,18 @@ h6 {
   font-feature-settings: "kern", "liga", "ss01";
   font-optical-sizing: auto;
   color: var(--color-warm-900);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Buttons + links: remove tap-delay, avoid default tap flash on iOS */
+button,
+a,
+[role="button"] {
+  touch-action: manipulation;
 }
 
 ::selection {
@@ -76,6 +92,14 @@ h6 {
   outline: 2px solid var(--color-gold-600);
   outline-offset: 2px;
   border-radius: 4px;
+  scroll-margin-top: 96px;
+  scroll-margin-bottom: 96px;
+}
+
+/* Anchor-link jump clearance for sticky header + mobile CTA */
+section[id] {
+  scroll-margin-top: 96px;
+  scroll-margin-bottom: 96px;
 }
 
 /* Reduced motion */

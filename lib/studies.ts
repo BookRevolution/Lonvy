@@ -42,7 +42,7 @@ export const studyGroups: StudyGroup[] = [
         title:
           "Oral Collagen Supplementation: A Systematic Review of Dermatological Applications",
         description:
-          "Choi et al. (2019) · J Drugs Dermatol. Wundheilung: 21–27 Tage (Kollagen) vs. 34–41 Tage (Placebo), p < 0.01 — ca. 40 % schneller. Signifikant niedrigere VSS-Narbenscores, weniger Fibrose, überlegene Gewebestruktur. Kernreferenz für das perioperative Kollagen-Protokoll.",
+          "Choi et al. (2019) · J Drugs Dermatol. Wundheilung: 21–27 Tage (Kollagen) vs. 34–41 Tage (Placebo), p < 0.01 — ca. 40 % schneller. Signifikant niedrigere VSS-Narbenscores, weniger Fibrose, überlegene Gewebestruktur. Kernreferenz für das perioperative Kollagen-Protokoll.",
         citation: "J Drugs Dermatol 2019;18(1):9–16",
         link: "https://pubmed.ncbi.nlm.nih.gov/30681787/",
         linkLabel: "PubMed",

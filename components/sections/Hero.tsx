@@ -13,7 +13,7 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Text */}
           <div className="lg:col-span-7 flex flex-col gap-6 md:gap-8 order-2 lg:order-1">
-            <span className="text-[13px] font-medium uppercase tracking-[0.12em] text-gold-700">
+            <span className="text-[13px] font-medium uppercase tracking-[0.12em] text-gold-800">
               Für Ärzte und Praxen
             </span>
 
@@ -46,11 +46,12 @@ export function Hero() {
           <div className="lg:col-span-5 flex items-center justify-center order-1 lg:order-2">
             <div className="relative w-full max-w-[520px] aspect-[16/10] rounded-[24px] overflow-hidden">
               <Image
-                src="/images/hero-product.png"
+                src="/images/hero-product.webp"
                 alt="Lonvy Supplement — Premium-Produktlinie für Ärztepraxen"
-                width={1600}
-                height={1000}
+                width={1200}
+                height={750}
                 priority
+                fetchPriority="high"
                 className="w-full h-full object-cover"
               />
             </div>

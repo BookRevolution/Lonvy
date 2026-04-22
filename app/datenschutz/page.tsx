@@ -6,6 +6,8 @@ import { Container } from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "Datenschutz",
   description: "Informationen zum Datenschutz nach DSGVO.",
+  alternates: { canonical: "/datenschutz" },
+  robots: { index: false, follow: true },
 };
 
 export default function DatenschutzPage() {

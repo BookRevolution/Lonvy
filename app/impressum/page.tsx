@@ -6,6 +6,8 @@ import { Container } from "@/components/ui/Container";
 export const metadata: Metadata = {
   title: "Impressum",
   description: "Impressum und Anbieterkennzeichnung.",
+  alternates: { canonical: "/impressum" },
+  robots: { index: false, follow: true },
 };
 
 export default function ImpressumPage() {

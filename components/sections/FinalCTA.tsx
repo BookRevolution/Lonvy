@@ -7,7 +7,7 @@ export function FinalCTA() {
     <Section id="final-cta" background="cream-100">
       <Container>
         <div className="max-w-[720px] mx-auto text-center flex flex-col items-center gap-8">
-          <span className="text-[13px] font-medium uppercase tracking-[0.12em] text-gold-700">
+          <span className="text-[13px] font-medium uppercase tracking-[0.12em] text-gold-800">
             Ihr Erstgespräch
           </span>
 

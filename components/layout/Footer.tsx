@@ -11,11 +11,12 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block" aria-label="Lonvy Startseite">
               <Image
-                src="/images/lonvy-logo.png"
-                alt="Lonvy"
-                width={750}
-                height={950}
+                src="/images/lonvy-logo.webp"
+                alt="Lonvy Logo"
+                width={600}
+                height={760}
                 className="h-16 w-auto"
+                translate="no"
               />
             </Link>
             <p className="mt-6 text-[14px] leading-[1.55] text-warm-700 max-w-[260px]">
@@ -65,7 +66,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-cream-300/60">
           <p className="text-[12px] text-warm-500">
-            © {new Date().getFullYear()} Lonvy GmbH · Alle Rechte vorbehalten
+            © 2026 <span translate="no">Lonvy GmbH</span> · Alle Rechte vorbehalten
           </p>
         </div>
       </Container>

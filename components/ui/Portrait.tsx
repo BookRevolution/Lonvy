@@ -1,13 +1,15 @@
+import Image from "next/image";
 import { cn } from "@/lib/cn";
 
 interface PortraitProps {
   size?: number;
   className?: string;
-  /** When Lara's real photo is available, pass src; otherwise placeholder renders */
+  /** When a real photo is available, pass src; otherwise placeholder renders */
   src?: string;
   alt?: string;
   initials?: string;
   ring?: boolean;
+  priority?: boolean;
 }
 
 /**
@@ -21,6 +23,7 @@ export function Portrait({
   alt = "Portrait",
   initials = "LV",
   ring = true,
+  priority = false,
 }: PortraitProps) {
   return (
     <div
@@ -35,17 +38,18 @@ export function Portrait({
         height: size,
         boxShadow: "0 24px 56px -12px rgba(42, 37, 32, 0.18)",
       }}
-      aria-label={alt}
     >
       {src ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <Image
           src={src}
           alt={alt}
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          sizes={`${size}px`}
+          priority={priority}
+          className="object-cover"
         />
       ) : (
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center" aria-label={alt}>
           <span
             className="font-serif text-warm-700/40"
             style={{ fontSize: size * 0.35, letterSpacing: "-0.02em" }}
