@@ -13,6 +13,7 @@ const navItems = [
   { label: "Studien", href: "/studien" },
   { label: "Longevity", href: "/#longevity" },
   { label: "Über uns", href: "/#trust" },
+  { label: "Konfigurator", href: "/konfigurator" },
 ];
 
 export function Navigation() {

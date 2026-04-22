@@ -39,6 +39,7 @@ export function Footer() {
               <FooterLink href="/#how-it-works">Ablauf</FooterLink>
               <FooterLink href="/#longevity">Longevity</FooterLink>
               <FooterLink href="/#trust">Über uns</FooterLink>
+              <FooterLink href="/konfigurator">Konfigurator</FooterLink>
             </ul>
           </div>
 
