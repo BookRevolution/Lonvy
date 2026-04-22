@@ -73,6 +73,19 @@ export default function RootLayout({
       className={`${fraunces.variable} ${inter.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-cream-50 text-warm-900 antialiased">
+        {/* Subtle product watermark overlay — sits above content but is almost invisible */}
+        <div
+          aria-hidden
+          className="fixed inset-0 pointer-events-none z-[1]"
+          style={{
+            backgroundImage: "url('/images/hero-product.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            opacity: 0.06,
+            mixBlendMode: "multiply",
+          }}
+        />
         {children}
         <OrganizationJsonLd />
       </body>
