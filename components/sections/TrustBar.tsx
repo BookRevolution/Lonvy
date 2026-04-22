@@ -38,25 +38,10 @@ export function TrustBar() {
               </span>
               <p className="relative italic font-serif text-[20px] md:text-[24px] leading-[1.5] text-warm-900">
                 Premium-Supplemente müssen zwei Dinge leisten: wissenschaftlich
-                belastbar sein — und zur Praxis passen, in der sie zum Einsatz
+                belastbar sein und zur Praxis passen, in der sie zum Einsatz
                 kommen. Dafür steht Lonvy.
               </p>
             </blockquote>
-
-            <div className="mt-4 md:mt-6 pt-6 border-t border-cream-300/70">
-              <p className="text-[15px] md:text-[16px] leading-[1.6] text-warm-700 max-w-[620px]">
-                In ärztlicher Partnerschaft mit dem{" "}
-                <a
-                  href="https://www.centrum-aestheticum.at/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-warm-900 underline underline-offset-4 decoration-gold-500 hover:decoration-gold-600"
-                >
-                  Centrum Aestheticum Wien
-                </a>
-                , unter der Leitung von Univ.-Prof. Dr. Edvin Turkof.
-              </p>
-            </div>
           </div>
         </div>
       </Container>

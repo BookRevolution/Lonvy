@@ -8,12 +8,16 @@ const points = [
     body: "Rezepturentwicklung, Studienprüfung und Qualitätssicherung übernehmen wir vollständig.",
   },
   {
-    title: "Keine Lagerhaltung",
-    body: "Produktion und Logistik laufen über uns. Sie bekommen, was Sie abverkaufen.",
+    title: "Wiederkehrender Umsatz",
+    body: "Patienten, die mit Ihrer Produktlinie starten, kommen für Nachbestellungen zurück. Das schafft einen kontinuierlichen Ertrag ohne zusätzlichen Akquise-Aufwand.",
+  },
+  {
+    title: "Stärkt Ihre Praxis-Marke",
+    body: "Eine eigene Produktlinie positioniert Sie sichtbar als Experten in Ihrem Fachgebiet und differenziert Sie von Praxen, die nur Standard-Präparate empfehlen.",
   },
   {
     title: "Flexible Modelle",
-    body: "Abrechnung und Abnahme werden individuell mit Ihnen abgestimmt — passend zu Ihrer Praxisgröße.",
+    body: "Abrechnung und Abnahme werden individuell auf Ihre Praxisgröße abgestimmt.",
   },
 ];
 
@@ -27,7 +31,7 @@ export function BusinessModel() {
           lead="Ihre Produktlinie generiert zusätzliche Einnahmen, ohne dass Sie Entwicklung, Lager oder Marketing selbst aufbauen müssen. Die Details des Modells besprechen wir individuell im Erstgespräch."
         />
 
-        <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1120px] mx-auto">
+        <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-[960px] mx-auto">
           {points.map((p) => (
             <div
               key={p.title}

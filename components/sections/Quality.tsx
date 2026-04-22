@@ -1,4 +1,4 @@
-import { Factory, ShieldCheck, FlaskConical, RefreshCw } from "lucide-react";
+import { Factory, ShieldCheck, RefreshCw } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -15,11 +15,6 @@ const items = [
     body: "Rohstoffe aus geprüften, zertifizierten Quellen. Herkunft und Reinheit sind dokumentiert.",
   },
   {
-    icon: FlaskConical,
-    title: "Laborgeprüfte Rezepturen",
-    body: "Jede Charge wird analytisch getestet, bevor sie Ihre Praxis erreicht.",
-  },
-  {
     icon: RefreshCw,
     title: "Kontinuierliche Optimierung",
     body: "Rezepturen lassen sich an neue Studienlagen oder Patientenbedürfnisse anpassen.",
@@ -33,14 +28,14 @@ export function Quality() {
         <SectionHeader
           eyebrow="Qualität"
           title="Qualität, die Sie prüfen können."
-          lead="Europäische Produktion unter GMP-Standards. Geprüfte Rohstoffe. Jede Charge analytisch getestet. Analyse-Zertifikate auf Anfrage."
+          lead="Europäische Produktion unter GMP-Standards. Geprüfte Rohstoffe."
         />
 
-        <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[960px] mx-auto">
+        <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1120px] mx-auto">
           {items.map(({ icon: Icon, title, body }) => (
             <div
               key={title}
-              className="bg-cream-100 rounded-2xl p-8 md:p-12 flex flex-col gap-6"
+              className="bg-cream-100 rounded-2xl p-8 md:p-10 flex flex-col gap-6"
             >
               <Icon
                 size={40}

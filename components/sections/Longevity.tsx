@@ -7,7 +7,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 const fields = [
   {
     title: "Zellgesundheit",
-    body: "Mitochondrienfunktion, oxidativer Stress, zelluläre Energieproduktion — Wirkstoffe mit klarer Evidenzlage.",
+    body: "Mitochondrienfunktion, oxidativer Stress, zelluläre Energieproduktion: Wirkstoffe mit klarer Evidenzlage.",
   },
   {
     title: "Hormonelle Balance",
@@ -15,7 +15,7 @@ const fields = [
   },
   {
     title: "Regeneration & Vitalität",
-    body: "Bewegungsapparat, Schlafqualität, Immunfunktion — Bausteine für langfristige Leistungsfähigkeit.",
+    body: "Bewegungsapparat, Schlafqualität, Immunfunktion: Bausteine für langfristige Leistungsfähigkeit.",
   },
 ];
 
@@ -27,7 +27,7 @@ export function Longevity() {
         <Container>
           <SectionHeader
             eyebrow="Longevity"
-            title="Longevity — mehr als ein Trend."
+            title="Longevity: mehr als ein Trend."
             lead="Gesundes Altern rückt in der modernen Medizin immer stärker in den Fokus. Unsere Longevity-Linien unterstützen Prävention, Zellgesundheit und die Themen, die Ihre Patientinnen und Patienten heute bewegen."
           />
 
@@ -59,7 +59,7 @@ export function Longevity() {
             {/* Text */}
             <div className="lg:col-span-7 lg:pl-6">
               <p className="italic font-serif text-[24px] md:text-[28px] leading-[1.3] text-warm-900 font-medium max-w-[520px]">
-                Longevity ist keine Marketing-Kategorie bei Lonvy — es ist
+                Longevity ist keine Marketing-Kategorie bei Lonvy: es ist
                 fachliche Basis.
               </p>
 

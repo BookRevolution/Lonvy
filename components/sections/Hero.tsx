@@ -27,7 +27,7 @@ export function Hero() {
 
             <p className="text-[18px] md:text-[20px] leading-[1.55] text-warm-700 max-w-[540px]">
               Individuelle Rezepturen, wissenschaftlich fundiert, unter Ihrer
-              Praxis-Marke. Sie entscheiden mit — wir kümmern uns um Forschung,
+              Praxis-Marke. Sie entscheiden mit, wir kümmern uns um Forschung,
               Produktion und Lieferung.
             </p>
 

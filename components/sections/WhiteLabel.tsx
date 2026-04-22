@@ -47,7 +47,7 @@ export function WhiteLabel() {
 
             <p className="mt-8 text-[17px] md:text-[18px] leading-[1.6] text-warm-700 max-w-[460px]">
               Private-Label-Nahrungsergänzung unter Ihrer Praxis-Marke. Lonvy
-              bleibt im Hintergrund — auf der Verpackung, im Regal Ihrer Praxis
+              bleibt im Hintergrund: auf der Verpackung, im Regal Ihrer Praxis
               und in den Unterlagen für Ihre Patientinnen und Patienten steht
               Ihr Name.
             </p>

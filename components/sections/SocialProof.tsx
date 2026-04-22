@@ -52,16 +52,6 @@ export function SocialProof() {
             </div>
           </figcaption>
         </figure>
-
-        {/* Neutral note */}
-        <div className="mt-28 md:mt-32 max-w-[600px] mx-auto flex flex-col items-center gap-6">
-          <span aria-hidden className="h-px w-[200px] bg-cream-300" />
-          <p className="text-[15px] md:text-[16px] leading-[1.6] text-warm-500 text-center">
-            Aktuell im Aufbau unserer Partnerpraxis-Community — Gespräche mit
-            weiteren Ärztinnen und Ärzten aus Schönheitschirurgie, ästhetischer
-            Medizin und Longevity-Medizin laufen.
-          </p>
-        </div>
       </Container>
     </Section>
   );

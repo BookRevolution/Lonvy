@@ -21,7 +21,7 @@ const steps = [
   {
     n: "04",
     title: "Finale Rezeptur",
-    body: "Wir entwickeln die fertigen Rezepturen — studienbasiert, mit geprüften Rohstoffen und in passender Dosierung.",
+    body: "Wir entwickeln die fertigen Rezepturen: studienbasiert, mit geprüften Rohstoffen und in passender Dosierung.",
   },
   {
     n: "05",
@@ -36,8 +36,8 @@ export function HowItWorks() {
       <Container>
         <SectionHeader
           eyebrow="Der Ablauf"
-          title="So bauen wir Ihre Supplement-Linie — gemeinsam."
-          lead="In fünf Schritten vom Erstgespräch bis zur fertigen Produktlinie — transparent, strukturiert, und immer mit Ihnen am Steuer."
+          title="Gemeinsam bauen wir Ihre Supplement-Linie."
+          lead="In fünf Schritten vom Erstgespräch bis zur fertigen Produktlinie: transparent, strukturiert und immer mit Ihnen am Steuer."
         />
 
         <div className="mt-16 md:mt-24 mx-auto max-w-[820px]">

@@ -14,13 +14,13 @@ const pillars = [
     icon: Target,
     label: "Spezialisierung",
     title: "Abgestimmt auf Ihr Fachgebiet",
-    body: "Schönheitschirurgie, ästhetische Medizin, Gynäkologie, Longevity-Medizin — jedes Feld hat eigene Anforderungen.",
+    body: "Schönheitschirurgie, ästhetische Medizin, Dermatologie, Gynäkologie, Orthopädie, Sportmedizin, Endokrinologie, Funktionelle Medizin, Longevity-Medizin und weitere Fachrichtungen. Jedes Feld hat eigene Anforderungen.",
   },
   {
     icon: Users,
     label: "Patientengruppen",
     title: "Für die Menschen, die zu Ihnen kommen",
-    body: "Altersgruppen, Beschwerdebilder, Anwendungskontexte — die Formulierungen werden darauf abgestimmt.",
+    body: "Altersgruppen, Beschwerdebilder und Anwendungskontexte bestimmen, wie die Formulierungen abgestimmt werden.",
   },
 ];
 
@@ -34,7 +34,7 @@ export function CoreMessage() {
               Keine Rezeptur von der Stange.
               <br />
               <span className="text-warm-700">
-                Ihre Rezepturen — an Ihre Praxis angepasst.
+                Ihre Rezepturen, an Ihre Praxis angepasst.
               </span>
             </>
           }
