@@ -106,6 +106,28 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!selectedSlot || !form.name || !form.phone) return;
+
+    const subject = `Erstgesprächs-Anfrage: ${form.name}`;
+    const bodyLines = [
+      `Hallo Lonvy-Team,`,
+      ``,
+      `ich möchte ein kostenloses Erstgespräch vereinbaren.`,
+      ``,
+      `Name:               ${form.name}`,
+      `Telefon:            ${form.phone}`,
+      `Rückrufzeitpunkt:   ${selectedSlot}`,
+      `Fachrichtung:       ${form.specialty || "—"}`,
+      ``,
+      `Vielen Dank und beste Grüße`,
+      form.name,
+    ];
+    const body = bodyLines.join("\n");
+    const href = `mailto:info@lonvy.at?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = href;
     setStep("done");
   };
 
@@ -276,11 +298,19 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
             </Button>
 
             <p className="text-[12px] text-warm-500 text-center leading-[1.5]">
-              Mit Absenden stimmen Sie unserer{" "}
+              Mit Absenden öffnet sich Ihr Mailprogramm mit einer vorbereiteten
+              Nachricht an{" "}
+              <a
+                href="mailto:info@lonvy.at"
+                className="underline hover:text-warm-900"
+              >
+                info@lonvy.at
+              </a>
+              . Es gilt unsere{" "}
               <a href="/datenschutz" className="underline hover:text-warm-900">
                 Datenschutzerklärung
-              </a>{" "}
-              zu. (Dummy-Formular · wird später an echte Terminbuchung angebunden)
+              </a>
+              .
             </p>
           </form>
         ) : (
@@ -296,11 +326,18 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
               <Check size={28} className="text-gold-800" />
             </div>
             <h2 id={titleId} className="text-[26px] text-warm-900">
-              Vielen Dank!
+              Fast geschafft!
             </h2>
-            <p className="text-[15px] leading-[1.55] text-warm-700 max-w-[380px]">
-              Wir haben Ihre Anfrage erhalten und melden uns im gewünschten
-              Zeitfenster direkt bei Ihnen.
+            <p className="text-[15px] leading-[1.55] text-warm-700 max-w-[420px]">
+              Ihr Mailprogramm hat sich geöffnet. Bitte senden Sie die
+              vorbereitete Nachricht an{" "}
+              <a
+                href="mailto:info@lonvy.at"
+                className="underline hover:text-warm-900"
+              >
+                info@lonvy.at
+              </a>{" "}
+              ab. Wir melden uns im gewünschten Zeitfenster direkt bei Ihnen.
             </p>
             <Button
               onClick={onClose}
