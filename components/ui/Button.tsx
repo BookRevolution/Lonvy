@@ -21,6 +21,7 @@ interface ButtonProps extends BaseProps {
   href?: never;
   onClick?: () => void;
   type?: "button" | "submit";
+  disabled?: boolean;
 }
 
 type Props = LinkProps | ButtonProps;
@@ -63,10 +64,13 @@ export function Button({
     );
   }
 
+  const buttonProps = props as ButtonProps;
+
   return (
     <button
-      type={(props as ButtonProps).type ?? "button"}
-      onClick={(props as ButtonProps).onClick}
+      type={buttonProps.type ?? "button"}
+      onClick={buttonProps.onClick}
+      disabled={buttonProps.disabled}
       className={classes}
     >
       {children}

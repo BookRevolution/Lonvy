@@ -29,10 +29,15 @@ const specialties = [
   "Andere",
 ];
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzdyoprz";
+
 export function BookingModal({ open, onClose }: BookingModalProps) {
-  const [step, setStep] = useState<"form" | "done">("form");
+  const [step, setStep] = useState<"form" | "sending" | "done" | "error">(
+    "form",
+  );
   const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", phone: "", specialty: "" });
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const modalRef = useRef<HTMLDivElement | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -62,6 +67,7 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
         setStep("form");
         setSelectedSlot(null);
         setForm({ name: "", phone: "", specialty: "" });
+        setErrorMsg(null);
       }, 300);
       return () => window.clearTimeout(timeoutId);
     }
@@ -104,31 +110,44 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
     return () => window.removeEventListener("keydown", handleKey);
   }, [open, onClose]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selectedSlot || !form.name || !form.phone) return;
 
-    const subject = `Erstgesprächs-Anfrage: ${form.name}`;
-    const bodyLines = [
-      `Hallo Lonvy-Team,`,
-      ``,
-      `ich möchte ein kostenloses Erstgespräch vereinbaren.`,
-      ``,
-      `Name:               ${form.name}`,
-      `Telefon:            ${form.phone}`,
-      `Rückrufzeitpunkt:   ${selectedSlot}`,
-      `Fachrichtung:       ${form.specialty || "—"}`,
-      ``,
-      `Vielen Dank und beste Grüße`,
-      form.name,
-    ];
-    const body = bodyLines.join("\n");
-    const href = `mailto:info@lonvy.at?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
+    setErrorMsg(null);
+    setStep("sending");
 
-    window.location.href = href;
-    setStep("done");
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          slot: selectedSlot,
+          specialty: form.specialty || "—",
+          _subject: `Erstgesprächs-Anfrage: ${form.name}`,
+        }),
+      });
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        const firstError = Array.isArray(data?.errors) && data.errors[0]?.message;
+        throw new Error(firstError || `Fehler beim Senden (${response.status})`);
+      }
+
+      setStep("done");
+    } catch (err) {
+      setErrorMsg(
+        err instanceof Error
+          ? err.message
+          : "Unbekannter Fehler beim Senden der Anfrage.",
+      );
+      setStep("error");
+    }
   };
 
   const canSubmit = Boolean(selectedSlot && form.name && form.phone);
@@ -170,7 +189,7 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
           <X size={20} className="text-warm-700" aria-hidden />
         </button>
 
-        {step === "form" ? (
+        {step !== "done" ? (
           <form onSubmit={handleSubmit} className="flex flex-col gap-6" noValidate>
             <div>
               <span className="text-[12px] font-medium uppercase tracking-[0.12em] text-gold-800">
@@ -289,17 +308,35 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
               type="submit"
               variant="primary"
               size="lg"
+              disabled={!canSubmit || step === "sending"}
               className={cn(
                 "w-full mt-2",
-                !canSubmit && "opacity-50 cursor-not-allowed hover:translate-y-0",
+                (!canSubmit || step === "sending") &&
+                  "opacity-50 cursor-not-allowed hover:translate-y-0",
               )}
             >
-              Anfrage senden
+              {step === "sending" ? "Wird gesendet …" : "Anfrage senden"}
             </Button>
 
+            {step === "error" && errorMsg ? (
+              <p
+                role="alert"
+                className="text-[13px] leading-[1.5] text-warm-900 bg-gold-400/20 border border-gold-500/40 rounded-lg px-4 py-3"
+              >
+                Leider gab es ein Problem beim Senden: {errorMsg}. Bitte
+                versuchen Sie es erneut oder schreiben Sie direkt an{" "}
+                <a
+                  href="mailto:info@lonvy.at"
+                  className="underline hover:text-warm-900"
+                >
+                  info@lonvy.at
+                </a>
+                .
+              </p>
+            ) : null}
+
             <p className="text-[12px] text-warm-500 text-center leading-[1.5]">
-              Mit Absenden öffnet sich Ihr Mailprogramm mit einer vorbereiteten
-              Nachricht an{" "}
+              Mit Absenden senden wir Ihre Anfrage direkt an{" "}
               <a
                 href="mailto:info@lonvy.at"
                 className="underline hover:text-warm-900"
@@ -326,18 +363,11 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
               <Check size={28} className="text-gold-800" />
             </div>
             <h2 id={titleId} className="text-[26px] text-warm-900">
-              Fast geschafft!
+              Vielen Dank!
             </h2>
             <p className="text-[15px] leading-[1.55] text-warm-700 max-w-[420px]">
-              Ihr Mailprogramm hat sich geöffnet. Bitte senden Sie die
-              vorbereitete Nachricht an{" "}
-              <a
-                href="mailto:info@lonvy.at"
-                className="underline hover:text-warm-900"
-              >
-                info@lonvy.at
-              </a>{" "}
-              ab. Wir melden uns im gewünschten Zeitfenster direkt bei Ihnen.
+              Ihre Anfrage ist bei uns eingegangen. Wir melden uns im
+              gewünschten Zeitfenster direkt bei Ihnen.
             </p>
             <Button
               onClick={onClose}
