@@ -35,7 +35,7 @@ export function SocialProof() {
             <p className="italic font-serif text-[22px] md:text-[26px] leading-[1.5] text-warm-900 text-center">
               Was uns überzeugt hat, ist die konsequente Individualisierung. Die
               Rezepturen sind nicht generisch, sondern auf unsere Patientengruppen
-              zugeschnitten — wissenschaftlich solide und praktisch einsetzbar.
+              zugeschnitten, wissenschaftlich solide und praktisch einsetzbar.
               Wir prüfen aktuell die Erweiterung unserer Produktlinie.
             </p>
           </blockquote>

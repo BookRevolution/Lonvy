@@ -7,7 +7,7 @@ import { Konfigurator } from "@/components/konfigurator/Konfigurator";
 export const metadata: Metadata = {
   title: "Praxis-Konfigurator",
   description:
-    "Stellen Sie Ihre individuelle Supplement-Linie in wenigen Minuten zusammen. Wählen Sie Fachrichtung, Patientenprofil und Schwerpunkte — wir formulieren eine Rezeptur, die zu Ihrer Praxis passt.",
+    "Stellen Sie Ihre individuelle Supplement-Linie in wenigen Minuten zusammen. Wählen Sie Fachrichtung, Patientenprofil und Schwerpunkte, wir formulieren eine Rezeptur, die zu Ihrer Praxis passt.",
   alternates: { canonical: "/konfigurator" },
 };
 
@@ -23,13 +23,13 @@ export default function KonfiguratorPage() {
                 Praxis-Konfigurator
               </span>
               <h1 className="mt-5 font-serif font-light text-[40px] md:text-[56px] leading-[1.02] tracking-[-0.025em] text-warm-900">
-                Ihre Rezeptur —{" "}
+                Ihre Rezeptur,{" "}
                 <em className="italic text-warm-700">live konfiguriert.</em>
               </h1>
               <p className="mt-6 text-[17px] md:text-[19px] leading-[1.55] text-warm-700 max-w-[680px]">
                 Fünf Schritte. Von der Fachrichtung bis zum fertigen Etikett.
                 Unsere Formulierer arbeiten mit Ihnen live an einer Rezeptur,
-                die genau zu Ihrer Praxis passt — mit Ihrem Logo, Ihrem
+                die genau zu Ihrer Praxis passt, mit Ihrem Logo, Ihrem
                 Produktnamen, Ihrer Handschrift.
               </p>
               <p className="mt-4 text-[13px] leading-[1.6] text-warm-500 italic max-w-[680px]">

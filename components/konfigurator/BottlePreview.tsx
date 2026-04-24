@@ -13,7 +13,7 @@ interface BottlePreviewProps {
 
 /**
  * Elegant SVG-based supplement bottle with a live-editable label.
- * Replaces the original Three.js bottle — lighter, more on-brand.
+ * Replaces the original Three.js bottle, lighter, more on-brand.
  */
 export function BottlePreview({
   praxisName,

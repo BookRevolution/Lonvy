@@ -44,6 +44,23 @@ export function TrustBar() {
             </blockquote>
           </div>
         </div>
+
+        <div className="mt-12 md:mt-16">
+          <div
+            className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl bg-cream-50 ring-1 ring-gold-500/30"
+            style={{ boxShadow: "0 30px 60px -20px rgba(42, 37, 32, 0.25)" }}
+          >
+            <video
+              src="/videos/lara.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              aria-label="Dr. Lara Vadlau, animierter Titel"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </Container>
     </section>
   );

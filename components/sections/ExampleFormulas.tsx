@@ -48,7 +48,7 @@ export function ExampleFormulas() {
         <SectionHeader
           eyebrow="Beispiele"
           title="So könnte Ihre Produktlinie aussehen."
-          lead="Die folgenden Beispiele zeigen typische Rezepturen für verschiedene Fachgebiete — sie dienen der Illustration und stellen keine gesundheitsbezogenen Versprechen dar. Jede Praxis erhält am Ende eine eigene, individuell entwickelte Linie."
+          lead="Die folgenden Beispiele zeigen typische Rezepturen für verschiedene Fachgebiete, sie dienen der Illustration und stellen keine gesundheitsbezogenen Versprechen dar. Jede Praxis erhält am Ende eine eigene, individuell entwickelte Linie."
         />
 
         <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-[1120px] mx-auto">

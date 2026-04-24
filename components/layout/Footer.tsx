@@ -22,11 +22,21 @@ export function Footer() {
             <p className="mt-6 text-[14px] leading-[1.55] text-warm-700 max-w-[260px]">
               Premium-Supplemente & Longevity-Lösungen für Ihre Praxis.
             </p>
-            <p className="mt-6 text-[13px] leading-[1.6] text-warm-500">
-              kontakt@lonvy.de
+            <address className="mt-6 text-[13px] leading-[1.6] text-warm-500 not-italic">
+              <a
+                href="mailto:info@lonvy.at"
+                className="hover:text-warm-900 transition-colors"
+              >
+                info@lonvy.at
+              </a>
               <br />
-              +XX XXX XXXXXXX
-            </p>
+              <a
+                href="tel:+436607380058"
+                className="hover:text-warm-900 transition-colors"
+              >
+                +43 660 7380058
+              </a>
+            </address>
           </div>
 
           {/* Navigation */}
@@ -67,7 +77,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-cream-300/60">
           <p className="text-[12px] text-warm-500">
-            © 2026 <span translate="no">Lonvy GmbH</span> · Alle Rechte vorbehalten
+            © 2026 <span translate="no">WVA Business GmbH</span> · Alle Rechte vorbehalten
           </p>
         </div>
       </Container>

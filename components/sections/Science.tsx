@@ -13,12 +13,12 @@ const principles = [
   {
     n: "02",
     title: "Fachliche Gegenprüfung",
-    body: "Jede Formulierung durchläuft eine medizinische Plausibilitätsprüfung — auf Dosierung, Kombinationen und Wechselwirkungen.",
+    body: "Jede Formulierung durchläuft eine medizinische Plausibilitätsprüfung, auf Dosierung, Kombinationen und Wechselwirkungen.",
   },
   {
     n: "03",
     title: "Laufende Weiterentwicklung",
-    body: "Sobald neue Studien die Datenlage verändern, können Rezepturen angepasst und optimiert werden. Wissenschaft bleibt in Bewegung — Ihre Produkte auch.",
+    body: "Sobald neue Studien die Datenlage verändern, können Rezepturen angepasst und optimiert werden. Wissenschaft bleibt in Bewegung, Ihre Produkte auch.",
   },
 ];
 

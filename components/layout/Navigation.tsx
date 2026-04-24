@@ -47,7 +47,7 @@ export function Navigation() {
             >
               <Image
                 src="/images/lonvy-logo.webp"
-                alt="Lonvy — Startseite"
+                alt="Lonvy, Startseite"
                 width={600}
                 height={760}
                 priority

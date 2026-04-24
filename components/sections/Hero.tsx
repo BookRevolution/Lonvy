@@ -34,10 +34,10 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mt-2">
               <BookingCTA size="lg" />
               <a
-                href="mailto:kontakt@lonvy.de"
+                href="mailto:info@lonvy.at"
                 className="text-[15px] text-warm-500 hover:text-warm-900 transition-colors underline-offset-4 hover:underline"
               >
-                oder kontakt@lonvy.de
+                oder info@lonvy.at
               </a>
             </div>
           </div>
@@ -47,7 +47,7 @@ export function Hero() {
             <div className="relative w-full max-w-[520px] aspect-[16/10] rounded-[24px] overflow-hidden">
               <Image
                 src="/images/hero-product.webp"
-                alt="Lonvy Supplement — Premium-Produktlinie für Ärztepraxen"
+                alt="Lonvy Supplement: Premium-Produktlinie für Ärztepraxen"
                 width={1200}
                 height={750}
                 priority

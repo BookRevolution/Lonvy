@@ -24,21 +24,26 @@ export default function ImpressumPage() {
             </h1>
 
             <div className="mt-12 md:mt-16 prose-lonvy">
-              <Block title="Anbieter">
-                <p>Lonvy GmbH</p>
-                <p>[Straße Hausnummer]</p>
-                <p>[PLZ Ort]</p>
-                <p>[Land]</p>
+              <Block title="Medieninhaberin & Anbieter">
+                <p>WVA Business GmbH</p>
+                <p className="mt-4">Heinrich Pevny Gasse 2/6</p>
+                <p>A-2460 Bruckneudorf</p>
+                <p>Österreich</p>
               </Block>
 
               <Block title="Kontakt">
                 <p>
                   E-Mail:{" "}
-                  <a href="mailto:kontakt@lonvy.de" className="underline">
-                    kontakt@lonvy.de
+                  <a href="mailto:info@lonvy.at" className="underline">
+                    info@lonvy.at
                   </a>
                 </p>
-                <p>Telefon: [+XX XXX XXXXXXX]</p>
+                <p>
+                  Telefon:{" "}
+                  <a href="tel:+436607380058" className="underline">
+                    +43 660 7380058
+                  </a>
+                </p>
               </Block>
 
               <Block title="Vertretungsberechtigte Geschäftsführung">
@@ -46,12 +51,13 @@ export default function ImpressumPage() {
               </Block>
 
               <Block title="Registereintragung">
-                <p>Handelsregister: [Amtsgericht / Firmenbuch]</p>
-                <p>Registernummer: [FN / HRB-Nummer]</p>
+                <p>Firmenbuchnummer: FN 591894h</p>
+                <p>Firmenbuchgericht: [Landesgericht]</p>
+                <p>EUID: ATBRA.591894-000</p>
               </Block>
 
               <Block title="Umsatzsteuer-Identifikationsnummer">
-                <p>USt-IdNr.: [ATU / DE ...]</p>
+                <p>UID-Nr.: [ATU ...]</p>
               </Block>
 
               <Block title="Verantwortlich für den Inhalt">
@@ -66,10 +72,6 @@ export default function ImpressumPage() {
                 </p>
               </Block>
             </div>
-
-            <p className="mt-12 text-[13px] text-warm-500 italic">
-              Platzhalter — wird mit finalen Daten der Lonvy GmbH befüllt.
-            </p>
           </Container>
         </div>
       </SiteShell>

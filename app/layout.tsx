@@ -18,35 +18,35 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Lonvy — White-Label-Supplemente für Ärzte & Praxen",
+    default: "Lonvy: White-Label-Supplemente für Ärzte & Praxen",
     template: "%s · Lonvy",
   },
   description:
     "Personalisierte Nahrungsergänzung unter Ihrer Praxis-Marke. Wissenschaftlich fundiert, in Europa produziert, individuell entwickelt. Erstgespräch kostenfrei.",
-  metadataBase: new URL("https://lonvy.de"),
+  metadataBase: new URL("https://lonvy.at"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Lonvy — White-Label-Supplemente für Ärzte & Praxen",
+    title: "Lonvy: White-Label-Supplemente für Ärzte & Praxen",
     description:
       "Personalisierte Nahrungsergänzung unter Ihrer Praxis-Marke. Wissenschaftlich fundiert, in Europa produziert, individuell entwickelt.",
-    locale: "de_DE",
+    locale: "de_AT",
     type: "website",
-    url: "https://lonvy.de",
+    url: "https://lonvy.at",
     siteName: "Lonvy",
     images: [
       {
         url: "/images/hero-product.webp",
         width: 1200,
         height: 750,
-        alt: "Lonvy Supplement — Premium-Produktlinie für Ärztepraxen",
+        alt: "Lonvy Supplement: Premium-Produktlinie für Ärztepraxen",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lonvy — White-Label-Supplemente für Ärzte",
+    title: "Lonvy: White-Label-Supplemente für Ärzte",
     description:
       "Personalisierte Nahrungsergänzung unter Ihrer Praxis-Marke. Wissenschaftlich fundiert, individuell entwickelt.",
     images: ["/images/hero-product.webp"],

@@ -70,7 +70,7 @@ export function WhiteLabel() {
             </div>
 
             <p className="mt-12 italic font-serif text-[20px] md:text-[22px] leading-[1.45] text-warm-900 max-w-[480px] border-l-2 border-gold-500 pl-5">
-              Sie positionieren Ihre Praxis als Marke — wir liefern, was dahinter
+              Sie positionieren Ihre Praxis als Marke, wir liefern, was dahinter
               steht.
             </p>
           </div>

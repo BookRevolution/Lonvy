@@ -67,7 +67,7 @@ export function Longevity() {
                 <p className="text-[17px] leading-[1.65] text-warm-700">
                   Dr. med. univ. Lara Vadlau ist Autorin von{" "}
                   <em className="font-serif text-warm-900 not-italic">
-                    „Die Alterslüge — Die effektivsten Longevity-Strategien für
+                    „Die Alterslüge: Die effektivsten Longevity-Strategien für
                     ein längeres gesundes Leben"
                   </em>{" "}
                   (RBM Publishing).

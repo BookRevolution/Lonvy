@@ -25,11 +25,16 @@ export default function DatenschutzPage() {
 
             <div className="mt-12 md:mt-16 flex flex-col gap-12">
               <Block title="Verantwortlicher">
-                <p>Lonvy GmbH, [Anschrift wie Impressum]</p>
-                <p>
+                <p>WVA Business GmbH</p>
+                <p>Heinrich Pevny Gasse 2/6, A-2460 Bruckneudorf, Österreich</p>
+                <p className="mt-2">
                   Kontakt:{" "}
-                  <a href="mailto:kontakt@lonvy.de" className="underline">
-                    kontakt@lonvy.de
+                  <a href="mailto:info@lonvy.at" className="underline">
+                    info@lonvy.at
+                  </a>
+                  {" · "}
+                  <a href="tel:+436607380058" className="underline">
+                    +43 660 7380058
                   </a>
                 </p>
               </Block>
@@ -60,7 +65,7 @@ export default function DatenschutzPage() {
                 <p>
                   Sie haben das Recht auf Auskunft, Berichtigung, Löschung,
                   Einschränkung der Verarbeitung, Datenübertragbarkeit und
-                  Widerspruch. Anfragen richten Sie bitte an kontakt@lonvy.de.
+                  Widerspruch. Anfragen richten Sie bitte an info@lonvy.at.
                 </p>
                 <p>
                   Sie haben ebenfalls das Recht, sich bei der zuständigen
@@ -86,8 +91,9 @@ export default function DatenschutzPage() {
             </div>
 
             <p className="mt-12 text-[13px] text-warm-500 italic">
-              Platzhalter — wird mit finaler Datenschutzerklärung der Lonvy
-              GmbH befüllt (Rücksprache mit Datenschutzbeauftragten empfohlen).
+              Diese Datenschutzerklärung wird laufend auf Basis der
+              tatsächlich eingesetzten Dienste aktualisiert (Rücksprache mit
+              Datenschutzbeauftragten empfohlen).
             </p>
           </Container>
         </div>

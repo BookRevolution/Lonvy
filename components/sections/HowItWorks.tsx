@@ -11,7 +11,7 @@ const steps = [
   {
     n: "02",
     title: "Rezeptur-Vorschlag",
-    body: "Auf Basis des Gesprächs erstellen wir eine Liste möglicher Präparate — welche Wirkstoffe medizinisch Sinn ergeben, welche Kombinationen zu Ihren Patienten passen.",
+    body: "Auf Basis des Gesprächs erstellen wir eine Liste möglicher Präparate, welche Wirkstoffe medizinisch Sinn ergeben, welche Kombinationen zu Ihren Patienten passen.",
   },
   {
     n: "03",

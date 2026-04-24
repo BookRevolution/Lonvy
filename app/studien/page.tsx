@@ -8,7 +8,7 @@ import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = {
   title: "Studien & Evidenz",
-  description: `${totalStudies} peer-reviewed Studien — die wissenschaftliche Grundlage unserer Wirkstoff-Protokolle. Alle Referenzen mit direkten Links zu den Originalquellen.`,
+  description: `${totalStudies} peer-reviewed Studien, die wissenschaftliche Grundlage unserer Wirkstoff-Protokolle. Alle Referenzen mit direkten Links zu den Originalquellen.`,
   alternates: { canonical: "/studien" },
 };
 
@@ -18,7 +18,7 @@ const medicalWebPageJsonLd = {
   name: "Evidenzbasierte Studienreferenzen",
   description:
     "Peer-reviewed Studien zu den Wirkstoff-Protokollen von Lonvy. Zusammenstellung für medizinisches Fachpublikum.",
-  url: "https://lonvy.de/studien",
+  url: "https://lonvy.at/studien",
   audience: {
     "@type": "MedicalAudience",
     audienceType: "medical professional",
@@ -39,7 +39,7 @@ const medicalWebPageJsonLd = {
   isPartOf: {
     "@type": "WebSite",
     name: "Lonvy",
-    url: "https://lonvy.de",
+    url: "https://lonvy.at",
   },
 };
 
@@ -64,7 +64,7 @@ export default function StudienPage() {
                 <em className="font-serif text-warm-700">Ein Protokoll.</em>
               </h1>
               <p className="mt-8 text-[18px] md:text-[20px] leading-[1.55] text-warm-700 max-w-[680px]">
-                Unsere Rezepturen sind keine Marketing-Konstrukte — sie basieren
+                Unsere Rezepturen sind keine Marketing-Konstrukte, sie basieren
                 auf peer-reviewed Studien. Hier finden Sie alle Referenzen, die
                 den Wirkstoff-Protokollen zugrunde liegen: mit Kernaussagen,
                 Studiendesign und direkten Links zu den Originalquellen.
@@ -137,10 +137,10 @@ export default function StudienPage() {
               <p className="mt-2 text-[14px] leading-[1.6] text-warm-500">
                 Newsletter für neue Studien?{" "}
                 <a
-                  href="mailto:kontakt@lonvy.de?subject=Newsletter%20Studien"
+                  href="mailto:info@lonvy.at?subject=Newsletter%20Studien"
                   className="text-gold-700 underline underline-offset-4 hover:text-gold-600"
                 >
-                  kontakt@lonvy.de
+                  info@lonvy.at
                 </a>
               </p>
             </div>

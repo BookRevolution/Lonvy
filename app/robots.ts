@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
@@ -7,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://lonvy.de/sitemap.xml",
-    host: "https://lonvy.de",
+    sitemap: "https://lonvy.at/sitemap.xml",
+    host: "https://lonvy.at",
   };
 }

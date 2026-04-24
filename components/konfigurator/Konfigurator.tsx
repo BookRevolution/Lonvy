@@ -140,7 +140,7 @@ export function Konfigurator() {
             <em className="italic text-gold-800">in wenigen Minuten.</em>
           </h1>
           <p className="mt-4 text-[14px] md:text-[15px] leading-[1.6] text-warm-700 max-w-[340px]">
-            Wählen Sie Fachrichtung, Patientenprofil und Schwerpunkte — wir
+            Wählen Sie Fachrichtung, Patientenprofil und Schwerpunkte, wir
             formulieren live eine Rezeptur, die zu Ihrer Praxis passt. Mit
             Ihrem Logo, auf Wunsch als White-Label.
           </p>
@@ -465,7 +465,7 @@ export function Konfigurator() {
             <Badge color="amber">Live-Vorschau</Badge>
           </div>
           <div className="hidden md:block absolute top-5 right-5 max-w-[240px] text-right font-serif italic font-light text-[15px] leading-[1.3] text-warm-700 z-[1] pointer-events-none">
-            „Kuratiert statt konfektioniert —<br />
+            „Kuratiert statt konfektioniert,<br />
             Ihre Praxis, Ihre Rezeptur."
           </div>
           <BottlePreview
@@ -551,7 +551,7 @@ export function Konfigurator() {
             Datenblatt als PDF generieren
           </button>
           <a
-            href={`mailto:kontakt@lonvy.de?subject=Angebot%20${encodeURIComponent(productName)}&body=${encodeURIComponent(
+            href={`mailto:info@lonvy.at?subject=Angebot%20${encodeURIComponent(productName)}&body=${encodeURIComponent(
               `Guten Tag,\n\nich interessiere mich für ein Angebot zu folgender Rezeptur:\n\nProdukt: ${productName}\nPraxis: ${praxisName}\nFachrichtung: ${specialtyObj?.name}\nZielgruppe: ${ageMin}-${ageMax} Jahre\nWirkstoffe: ${activeIngredients.map((i) => i.name).join(", ")}\n\nBitte um Rückmeldung.`,
             )}`}
             className="w-full mt-2 px-4 py-3.5 rounded-xl border border-warm-900 bg-transparent text-warm-900 text-[13px] flex items-center justify-center gap-2 hover:bg-cream-100 transition-colors"

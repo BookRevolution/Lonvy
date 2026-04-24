@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://lonvy.de";
+  const base = "https://lonvy.at";
   const now = new Date();
   return [
     {

@@ -24,10 +24,10 @@ export function FinalCTA() {
           <div className="mt-4 flex flex-col items-center gap-5">
             <BookingCTA size="lg" />
             <a
-              href="mailto:kontakt@lonvy.de"
+              href="mailto:info@lonvy.at"
               className="text-[15px] text-warm-500 hover:text-warm-900 transition-colors underline-offset-4 hover:underline"
             >
-              oder direkt per E-Mail: kontakt@lonvy.de
+              oder direkt per E-Mail: info@lonvy.at
             </a>
           </div>
         </div>
