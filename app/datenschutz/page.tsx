@@ -26,7 +26,7 @@ export default function DatenschutzPage() {
             <div className="mt-12 md:mt-16 flex flex-col gap-12">
               <Block title="Verantwortlicher">
                 <p>WVA Business GmbH</p>
-                <p>Heinrich Pevny Gasse 2/6, A-2460 Bruckneudorf, Österreich</p>
+                <p>Heinrich Pevny Gasse 2/6, A-2320 Mannswörth, Österreich</p>
                 <p className="mt-2">
                   Kontakt:{" "}
                   <a href="mailto:info@lonvy.at" className="underline">

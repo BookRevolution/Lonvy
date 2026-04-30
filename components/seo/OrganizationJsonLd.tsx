@@ -29,8 +29,8 @@ const organization = {
   address: {
     "@type": "PostalAddress",
     streetAddress: "Heinrich Pevny Gasse 2/6",
-    postalCode: "2460",
-    addressLocality: "Bruckneudorf",
+    postalCode: "2320",
+    addressLocality: "Mannswörth",
     addressCountry: "AT",
   },
   founder: {

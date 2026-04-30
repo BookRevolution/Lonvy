@@ -27,7 +27,7 @@ export default function ImpressumPage() {
               <Block title="Medieninhaberin & Anbieter">
                 <p>WVA Business GmbH</p>
                 <p className="mt-4">Heinrich Pevny Gasse 2/6</p>
-                <p>A-2460 Bruckneudorf</p>
+                <p>A-2320 Mannswörth</p>
                 <p>Österreich</p>
               </Block>
 
@@ -47,21 +47,21 @@ export default function ImpressumPage() {
               </Block>
 
               <Block title="Vertretungsberechtigte Geschäftsführung">
-                <p>[Name Geschäftsführung]</p>
+                <p>Daniela Wukotitsch</p>
               </Block>
 
               <Block title="Registereintragung">
                 <p>Firmenbuchnummer: FN 591894h</p>
-                <p>Firmenbuchgericht: [Landesgericht]</p>
+                <p>Firmenbuchgericht: Landesgericht Korneuburg</p>
                 <p>EUID: ATBRA.591894-000</p>
               </Block>
 
               <Block title="Umsatzsteuer-Identifikationsnummer">
-                <p>UID-Nr.: [ATU ...]</p>
+                <p>UID-Nr.: ATU78724935</p>
               </Block>
 
               <Block title="Verantwortlich für den Inhalt">
-                <p>[Name], Adresse wie oben</p>
+                <p>Daniela Wukotitsch, Adresse wie oben</p>
               </Block>
 
               <Block title="Haftungshinweis">
